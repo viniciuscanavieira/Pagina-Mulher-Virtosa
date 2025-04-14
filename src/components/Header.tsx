@@ -9,7 +9,7 @@ const Header = () => {
     <header className="py-4 fixed w-full bg-white bg-opacity-95 shadow-sm z-50">
       <div className="container-custom flex justify-between items-center">
         <div className="text-2xl font-bold text-rose">
-          <h1 className="font-playfair">Virtude em Flor</h1>
+          <h1 className="font-playfair">Mulher Virtuosa</h1>
         </div>
         
         {/* Mobile menu button */}
