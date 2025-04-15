@@ -1,6 +1,6 @@
 
 import { Check } from 'lucide-react';
-import selo from '../assets/2.png'; // caminho relativo correto
+import selo from '../assets/pg.png'; // caminho relativo correto
 const CheckoutCard = () => {
   const features = [
     '7 capítulos profundos sobre cura emocional com Deus',
@@ -43,18 +43,24 @@ const CheckoutCard = () => {
                   </div>
                 ))}
               </div>
-              
-              <div className="bg-lilac-light/20 p-6 rounded-lg text-center mb-8">
-                <div className="mb-2">
-                  <span className="text-gray-500 line-through text-lg">De R$ 00,00</span>
-                </div>
-                <div className="text-2xl md:text-3xl font-bold text-rose mb-1">
-                  por 12x de R$ 00,00
-                </div>
-                <div className="text-xl">
-                  ou R$ 00,00 à vista
-                </div>
-              </div>
+              <div className="bg-lilac-light/20 border border-lilac-dark p-6 rounded-2xl text-center mb-8 shadow-md">
+  <div className="mb-2">
+    <span className="text-red-500 text-base line-through">De R$ 129,90</span>
+  </div>
+
+  <div className="text-3xl md:text-4xl font-bold text-green-600 mb-1">
+    12x de R$ 9,74
+  </div>
+
+  <div className="text-lg text-gray-700 mb-2">
+    no cartão de crédito
+  </div>
+
+  <div className="text-xl text-green-800 font-semibold">
+    ou R$ 97,00 à vista
+  </div>
+</div>
+
               
               <button className="btn-primary w-full py-4 text-xl">
                 QUERO ME INSCREVER

@@ -14,7 +14,7 @@ const Hero = () => {
       <img
   src={mulherImg}
   alt="Imagem emocional representando feridas internas"
-  className="mx-auto mb-10 w-full max-w-md"
+  className="mx-auto mb-10 w-2/3 sm:w-1/2 max-w-md mb-8"
 />
 
       <div className="space-y-4 mb-10 text-lg md:text-xl">
