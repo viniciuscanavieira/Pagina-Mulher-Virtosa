@@ -14,11 +14,14 @@ const BenefitsSection = () => {
   return (
     <section id="conteudo" className="section-padding bg-lilac-light/100">
       <div className="container-custom">
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 gradient-text">
-            Você encontrou a resposta que precisava:
-          </h2>
-        </div>
+      <div className="text-center max-w-3xl mx-auto mb-12">
+  <h2
+    className="text-3xl md:text-4xl font-bold mb-6"
+    style={{ color: '#690742' }}
+  >
+    Você encontrou a resposta que precisava:
+  </h2>
+</div>
 
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {benefitsList.map((benefit, index) => (

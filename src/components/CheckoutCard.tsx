@@ -1,6 +1,6 @@
 
 import { Check } from 'lucide-react';
-
+import selo from '../assets/2.png'; // caminho relativo correto
 const CheckoutCard = () => {
   const features = [
     '7 capítulos profundos sobre cura emocional com Deus',
@@ -22,14 +22,15 @@ const CheckoutCard = () => {
       <div className="container-custom">
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-            <div className="bg-gradient-to-r from-rose to-lilac-dark p-8 text-white text-center">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                Mulher Virtuosa é o guia que eu gostaria de ter quando tudo dentro de mim parecia quebrado.
-              </h2>
-              <p className="text-lg">
-                E agora ele está disponível para você.
-              </p>
-            </div>
+          <div className="bg-gradient-to-r from-[#690742] to-[#E348A1] p-8 text-white text-center rounded-2xl">
+  <h2 className="text-2xl md:text-3xl font-bold mb-4">
+    Mulher Virtuosa é o guia que eu gostaria de ter quando tudo dentro de mim parecia quebrado.
+  </h2>
+  <p className="text-lg">
+    E agora ele está disponível para você.
+  </p>
+</div>
+
             
             <div className="p-6 md:p-10">
               <div className="grid md:grid-cols-2 gap-4 mb-8">
@@ -59,6 +60,11 @@ const CheckoutCard = () => {
                 QUERO ME INSCREVER
               </button>
             </div>
+            <img
+  src={selo}
+  alt="Ilustração representando transformação"
+  className="mx-auto w-2/3 sm:w-1/2 md:w-full max-w-md"
+/>
           </div>
         </div>
       </div>

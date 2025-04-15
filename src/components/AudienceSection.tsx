@@ -13,13 +13,16 @@ const AudienceSection = () => {
     <section className="section-padding from-white to-lilac-light/30 bg-lilac-light/100">
       <div className="container-custom text-center">
         <div className="max-w-4xl mx-auto ">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 gradient-text">
-            PARA QUEM É ESSE LIVRO?
-          </h2>
+        <h2
+  className="text-3xl md:text-4xl font-bold mb-8"
+  style={{ color: '#690742' }}
+>
+  PARA QUEM É ESSE LIVRO?
+</h2>
           
-          <div className="space-y-6 ">
+          <div className="space-y-6 gap-6">
             {audienceList.map((item, index) => (
-              <div key={index} className="benefit-item shadow-md rounded-md bg-white">
+              <div key={index} className="flex items-start gap-4 p-4 bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
                 <div className="flex-shrink-0 mt-1 text-rose-DEFAULT">
                 <CheckCircle size={28} />
               </div>
