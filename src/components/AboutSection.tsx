@@ -13,7 +13,11 @@ const AboutSection = () => {
         >
           Mulher Virtuosa não é apenas um material de leitura.
         </h2>
-
+        <img 
+  src={ebookMockup} 
+  alt="E-book Mulher Virtuosa" 
+  className="w-full max-w-md mx-auto animate-pulse-scale" 
+/>
         <p
           className="text-xl md:text-2xl font-medium mb-4"
           style={{ color: '#690742' }}
@@ -38,12 +42,6 @@ const AboutSection = () => {
           
           <div className="md:w-1/2">
             <div className="relative">
-              {/* Placeholder for e-book mockup - ideally replace with actual image */}
-              <img 
-  src={ebookMockup} 
-  alt="E-book Mulher Virtuosa" 
-  className="w-full max-w-md mx-auto animate-pulse-scale" 
-/>
               {/* Decorative elements */}
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-lilac-light rounded-full -z-10"></div>
               <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-rose-light rounded-full -z-10"></div>
