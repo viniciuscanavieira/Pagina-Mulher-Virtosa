@@ -3,7 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
 
 @layer base {
   :root {
@@ -93,17 +94,17 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
   }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+  a, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
   }
+ 
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-full font-bold shadow-md transition-all duration-300 transform hover:scale-105;
+    @apply bg-rose hover:bg-rose-dark text-white py-3 px-6 rounded-full font-bold shadow-md transition-all duration-300 transform hover:scale-105;
   }
   
   .section-padding {
@@ -128,4 +129,16 @@
 }
 html {
   scroll-behavior: smooth;
+}
+@keyframes pulse-scale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.animate-pulse-scale {
+  animation: pulse-scale 2s infinite ease-in-out;
 }

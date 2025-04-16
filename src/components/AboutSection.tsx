@@ -28,19 +28,22 @@ const AboutSection = () => {
           Uma jornada de reencontro com o seu valor, sua essência com Deus.
         </p>
             
-            <button className="btn-primary justify-center">
-              QUERO MUDAR
-            </button>
+        <a
+        href="#checkout"
+        className="btn-primary text-lg md:text-xl px-8 py-4 block mx-auto text-center mt-8"
+      >
+        QUERO MUDAR
+      </a>
           </div>
           
           <div className="md:w-1/2">
             <div className="relative">
               {/* Placeholder for e-book mockup - ideally replace with actual image */}
               <img 
-                src={ebookMockup} 
-                alt="E-book Mulher Virtuosa" 
-                className="w-full max-w-md mx-auto" 
-              />
+  src={ebookMockup} 
+  alt="E-book Mulher Virtuosa" 
+  className="w-full max-w-md mx-auto animate-pulse-scale" 
+/>
               {/* Decorative elements */}
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-lilac-light rounded-full -z-10"></div>
               <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-rose-light rounded-full -z-10"></div>
