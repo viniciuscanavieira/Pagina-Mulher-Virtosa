@@ -32,8 +32,8 @@ const CheckoutCard = () => {
               </p>
             </div>
 
-            <div className="p-6 md:p-10">
-              <div className="grid md:grid-cols-2 gap-4 mb-8">
+            <div className="relative p-6 md:p-10">
+  <div className="grid md:grid-cols-2 gap-4 mb-8">
                 {features.map((feature, index) => (
                   <motion.div
                     key={index}
@@ -69,9 +69,12 @@ const CheckoutCard = () => {
                 </div>
               </div>
 
-              <button className="btn-primary w-full py-4 text-xl">
-                QUERO ME INSCREVER
-              </button>
+              <div className="flex justify-center w-full mb-8">
+              <button className="bg-rose-500 hover:bg-rose-600 text-white font-semibold text-lg md:text-xl px-8 py-4 rounded-full shadow-lg transition-all duration-300">
+      QUERO ME INSCREVER
+    </button>
+
+  </div>
             </div>
 
             <img

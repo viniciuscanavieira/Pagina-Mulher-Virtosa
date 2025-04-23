@@ -1,5 +1,6 @@
 import { CheckCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
+import bg from '../assets/bg-02.png';
 
 const BenefitsSection = () => {
   const benefitsList = [
@@ -12,42 +13,48 @@ const BenefitsSection = () => {
   ];
 
   return (
-    <section id="conteudo" className="section-padding bg-lilac-light/100">
-      <div className="container-custom">
-      <div className="text-center max-w-3xl mx-auto mb-12">
-  <h2
-    className="text-3xl md:text-4xl font-bold mb-6"
-    style={{ color: '#690742' }}
-  >
-    Você encontrou a resposta que precisava:
-  </h2>
-</div>
+    <section
+      id="conteudo"
+      className="relative section-padding bg-cover bg-no-repeat bg-center"
+      style={{ backgroundImage: `url(${bg})` }}
+    >
+      <div className="absolute inset-0 bg-gradient-to-b from-white/90 to-[#fce4ef]/10 backdrop-blur-[2px] z-0" />
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-        {benefitsList.map((benefit, index) => (
-  <motion.div
-    key={index}
-    className="flex items-start gap-4 p-4 bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300"
-    initial={{ opacity: 0, y: 40 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ delay: index * 0.15, duration: 0.6, ease: 'easeOut' }}
-    viewport={{ once: false, amount: 0.3 }}
-  >
-    <div className="flex-shrink-0 mt-1 text-rose-DEFAULT">
-      <CheckCircle size={28} />
-    </div>
-    <p className="text-lg text-gray-800">{benefit}</p>
-  </motion.div>
-))}
+      <div className="container-custom relative z-10">
+        {/* Título */}
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <h2 className="text-4xl md:text-5xl font-extrabold leading-tight text-[#690742]">
+            Você encontrou a resposta que precisava:
+          </h2>
         </div>
 
-        <div className="mt-12 text-center">
-        <a
-        href="#checkout"
-        className="btn-primary text-lg md:text-xl px-8 py-4 block mx-auto text-center mt-8"
-      >
-        QUERO MUDAR
-      </a>
+        {/* Lista de Benefícios */}
+        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          {benefitsList.map((benefit, index) => (
+            <motion.div
+              key={index}
+              className="flex items-start gap-4 p-5 bg-white/90 rounded-2xl shadow-lg hover:shadow-2xl border-l-4 border-rose-300 transition-all"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.15, duration: 0.6, ease: 'easeOut' }}
+              viewport={{ once: false, amount: 0.3 }}
+            >
+              <div className="text-rose-500 mt-1">
+                <CheckCircle size={26} />
+              </div>
+              <p className="text-lg text-gray-800">{benefit}</p>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Botão CTA */}
+        <div className="mt-16 text-center">
+          <a
+            href="#checkout"
+            className="bg-rose-500 hover:bg-rose-600 text-white font-semibold text-lg md:text-xl px-8 py-4 rounded-full shadow-lg transition-all duration-300"
+          >
+            QUERO MUDAR
+          </a>
         </div>
       </div>
     </section>
