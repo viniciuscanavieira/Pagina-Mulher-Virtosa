@@ -1,7 +1,7 @@
 import { CheckCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 import bg from '../assets/bg-02.png';
-import audienceImg from '../assets/mulher.png'; // imagem destacada
+import audienceImg from '../assets/mulher-2.png'; // imagem destacada
 
 const AudienceSection = () => {
   const audienceList = [
@@ -51,7 +51,7 @@ const AudienceSection = () => {
             <img
               src={audienceImg}
               alt="Mulher representando o público"
-              className="w-full max-w-md mx-auto rounded-2xl shadow-xl animate-fade-in-up"
+              className="w-full max-w-md mx-auto animate-fade-in-up"
             />
           </div>
         </div>
